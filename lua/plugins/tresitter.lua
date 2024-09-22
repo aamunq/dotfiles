@@ -40,6 +40,7 @@ return {
         "lua",
         "sql",
         "vim",
+        "graphql",
         "http",
         "phpdoc",
         "go",
