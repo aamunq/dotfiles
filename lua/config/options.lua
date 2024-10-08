@@ -29,8 +29,8 @@ vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
-vim.opt.mouse = ""
-vim.o.shell = "powershell.exe"
+vim.opt.mouse = "a"
+vim.o.shell = "pwsh.exe"
 vim.g.lazyvim_php = "intelephense"
 vim.fn.executable("luarocks")
 -- Add asterisks in block comments
@@ -42,6 +42,9 @@ vim.api.nvim_create_autocmd("FileType", {
     -- Your custom actions here
   end,
 })
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 vim.filetype.add({
   extension = {

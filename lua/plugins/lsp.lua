@@ -67,6 +67,39 @@ return {
           },
         },
         html = {},
+        emmet_ls = {
+          capabilities = vim.lsp.protocol.make_client_capabilities(),
+          capabilities = {
+            textDocument = {
+              completion = {
+                completionItem = {
+                  snippetSupport = true,
+                },
+              },
+            },
+          },
+          filetypes = {
+            "css",
+            "eruby",
+            "html",
+            "javascript",
+            "javascriptreact",
+            "less",
+            "sass",
+            "scss",
+            "svelte",
+            "pug",
+            "typescriptreact",
+            "vue",
+          },
+          init_options = {
+            html = {
+              options = {
+                ["bem.enabled"] = true,
+              },
+            },
+          },
+        },
         lua_ls = {
           -- enabled = false,
           single_file_support = true,

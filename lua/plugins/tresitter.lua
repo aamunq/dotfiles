@@ -14,7 +14,7 @@ return {
       require("lazy.core.loader").add_to_rtp(plugin)
       require("nvim-treesitter.query_predicates")
       require("nvim-treesitter.install").prefer_git = false
-      require("nvim-treesitter.install").compilers = { "gcc", "clang" }
+      require("nvim-treesitter.install").compilers = { "cc" }
     end,
     cmd = { "TSUpdateSync", "TSUpdate", "TSInstall" },
     keys = {

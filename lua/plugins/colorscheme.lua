@@ -10,7 +10,14 @@ return {
   {
     "folke/tokyonight.nvim",
     lazy = true,
-    opts = { style = "moon" },
+    opts = {
+      transparent = true,
+      style = "moon",
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
   },
 
   {
@@ -18,6 +25,25 @@ return {
     priority = 1000,
     config = true,
     opts = { style = "light" },
+  },
+  {
+    "akinsho/horizon.nvim",
+  },
+
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+  {
+    "rebelot/kanagawa.nvim",
+  },
+  {
+    "navarasu/onedark.nvim",
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+    lazy = false,
+    priority = 1000,
   },
 
   {
@@ -29,6 +55,11 @@ return {
           "tokyonight",
           "catppuccin",
           "gruvbox",
+          "horizon",
+          "kanagawa",
+          "onedark",
+          "rose-pine",
+          "cyberdream",
         },
         livepreview = true,
       })
